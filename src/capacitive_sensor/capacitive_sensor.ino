@@ -6,7 +6,7 @@ CapacitiveSensor   cs_4_5 = CapacitiveSensor(4,5);
 
 void setup()                    
 {
-   cs_4_2.set_CS_AutocaL_Millis(0xFFFFFFFF);
+   cs_4_5.set_CS_AutocaL_Millis(0xFFFFFFFF);
    Serial.begin(115200);
 }
 

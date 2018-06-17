@@ -1,12 +1,12 @@
 #include "FastLED.h"
 
 // How many leds in your strip?
-#define NUM_LEDS 3 // D1
+#define NUM_LEDS 3
 
 // For led chips like Neopixels, which have a data line, ground, and power, you just
 // need to define DATA_PIN.  For led chipsets that are SPI based (four wires - data, clock,
 // ground, and power), like the LPD8806 define both DATA_PIN and CLOCK_PIN
-#define DATA_PIN 5
+#define DATA_PIN 12 // D1
 #define CLOCK_PIN 13
 
 // Define the array of leds
@@ -46,7 +46,7 @@ void loop() {
   // Turn the LED on, then pause
   int i;
   for (i=0;i<NUM_LEDS;i++){
-    leds[i] = CRGB::Green;
+    leds[i] = CRGB::Blue;
     FastLED.show();
     delay(500);
     leds[i] = CRGB::Black;
